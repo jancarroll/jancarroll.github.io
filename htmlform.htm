@@ -11,7 +11,7 @@ use Helpers\Config;
 use SimpleMail\SimpleMail;
 
 $config = new Config;
-$config->load('./config/config.php');
+$config->load('./config.php');
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $name    = stripslashes(trim($_POST['form-name']));
